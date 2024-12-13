@@ -1,6 +1,6 @@
 /* Fondo y texto */
 ion-content {
-  --background: #f9e6f6; /* Color pastel suave (lavanda claro) */
+  --background: #585758; /* Color pastel suave (lavanda claro) */
   --color: #3f72af; /* Texto en color pastel azul */
   --padding-top: 20px;
 }
@@ -9,10 +9,10 @@ ion-content {
 ion-item {
   font-size: 14px;
   color: #ffffff; /* Color de texto suave gris azulado */
-  --background: #3690eb; /* Fondo suave (azul pastel) */
+  --background: #585758; /* Fondo suave (azul pastel) */
 
   ion-icon {
-    color: #b3b3b3; /* Color gris claro para los iconos */
+    color: #ffffff; /* Color gris claro para los iconos */
   }
 
   &.active {
@@ -27,7 +27,7 @@ ion-item {
 h4 {
   margin-top: 5px;
   font-weight: bold;
-  color: #6c757d; /* Gris suave */
+  color: #f8f8f8; /* Gris suave */
 }
 
 /* Avatar */
