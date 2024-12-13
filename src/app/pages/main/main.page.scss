@@ -1,50 +1,57 @@
+/* Fondo y texto */
 ion-content {
-    --background: var(--ion-color-primary);
-    --color: var(--ion-color-primary-contrast);
-    --padding-top: 20px;
+  --background: #f9e6f6; /* Color pastel suave (lavanda claro) */
+  --color: #3f72af; /* Texto en color pastel azul */
+  --padding-top: 20px;
+}
+
+/* Elementos de lista (ion-item) */
+ion-item {
+  font-size: 14px;
+  color: #ffffff; /* Color de texto suave gris azulado */
+  --background: #3690eb; /* Fondo suave (azul pastel) */
+
+  ion-icon {
+    color: #b3b3b3; /* Color gris claro para los iconos */
   }
-  
-  ion-item{
-    font-size: 14px;
-    color: var(--ion-color-light);
-    --background: var(--ion-color-primary);
-  
+
+  &.active {
+    color: #ffb3c1; /* Color suave rosa para el item activo */
     ion-icon {
-        color: var(--ion-color-light);
+      color: #ffb3c1; /* El icono también toma el color rosa suave */
     }
-  
-    &.active {
-        color: var(--ion-color-warning);
-  
-        ion-icon {
-            color: var(--ion-color-warning);
-        }
-    }
-  
   }
-  
-  h4{
-    margin-top: 5px;
-    font-weight: bold;
-  }
-  
-  ion-avatar{
-    width: 120px;
-    height: 120px;
-    margin: 0 auto;
-  }
-  .empty-icon{
-    font-size: 100px;
-  }
-  
-  
-  ion-menu{
-    --width: 254px;
-    --min-width: 254px;
-    outline: none;
-  }
-  
-  ion-footer{
-    background: var(--ion-color-primary);
-  }
-  
+}
+
+/* Estilo de título */
+h4 {
+  margin-top: 5px;
+  font-weight: bold;
+  color: #6c757d; /* Gris suave */
+}
+
+/* Avatar */
+ion-avatar {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+}
+
+/* Icono vacío */
+.empty-icon {
+  font-size: 100px;
+  color: #f7a8b8; /* Color pastel rosado para los iconos vacíos */
+}
+
+/* Menú */
+ion-menu {
+  --width: 254px;
+  --min-width: 254px;
+  outline: none;
+  background-color: #f1f8ff; /* Fondo azul pastel para el menú */
+}
+
+/* Pie de página */
+ion-footer {
+  background: #f9e6f6; /* Fondo en color pastel lavanda para el pie de página */
+}

@@ -2,3 +2,12 @@ h1{
     margin-top: 70;
 }
 
+.imagen {
+    text-align: center;  /* Asegura que la imagen esté centrada */
+  }
+  
+  .imagen img {
+    width: 150px;  /* Ajusta el tamaño de la imagen */
+    height: auto;  /* Mantiene las proporciones */
+    border-radius: 50%;  /* Hace la imagen circular (opcional) */
+  }
