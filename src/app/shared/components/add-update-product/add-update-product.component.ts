@@ -79,6 +79,18 @@ export class AddUpdateProductComponent implements OnInit {
         position: 'middle',
         icon: 'checkmark-circle-outline'
       });
+
+       // Luego, después de 5 segundos, mostrar el mensaje de advertencia
+    setTimeout(() => {
+      this.utilsSrv.showToast({
+        message: 'Tienes una Tarea Pendiente',
+        duration: 15000,
+        color: 'warning',
+        position: 'middle',
+        icon: 'checkmark-circle-outline'
+      });
+    }, 5000); // Retraso de 5 segundos
+
     }).catch(error => {
       console.log(error);
 
@@ -116,6 +128,16 @@ export class AddUpdateProductComponent implements OnInit {
         position: 'middle',
         icon: 'checkmark-circle-outline'
       });
+        // Luego, después de 5 segundos, mostrar el mensaje de advertencia
+    setTimeout(() => {
+      this.utilsSrv.showToast({
+        message: 'Tienes una Tarea Pendiente',
+        duration: 15000,
+        color: 'warning',
+        position: 'middle',
+        icon: 'checkmark-circle-outline'
+      });
+    }, 5000); // Retraso 
     }).catch(error => {
       console.log(error);
 

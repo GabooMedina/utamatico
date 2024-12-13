@@ -99,5 +99,4 @@ export class TareasPage implements OnInit {
     this.openTaskModal(task);  // Abre el modal con la tarea seleccionada
   }
 
-  
 }
