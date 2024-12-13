@@ -73,7 +73,7 @@ export class AddUpdateProductComponent implements OnInit {
       this.utilsSrv.dismissModal({ success: true });
 
       this.utilsSrv.showToast({
-        message: 'Tarea creada exitosamente',
+        message: 'Tarea Entregada Exitosamente',
         duration: 1500,
         color: 'success',
         position: 'middle',
@@ -83,7 +83,7 @@ export class AddUpdateProductComponent implements OnInit {
        // Luego, después de 5 segundos, mostrar el mensaje de advertencia
     setTimeout(() => {
       this.utilsSrv.showToast({
-        message: 'Tienes una Tarea Pendiente',
+        message: 'Tu entrega ha sido Calificada',
         duration: 15000,
         color: 'warning',
         position: 'middle',
@@ -122,7 +122,7 @@ export class AddUpdateProductComponent implements OnInit {
       this.utilsSrv.dismissModal({ success: true });
 
       this.utilsSrv.showToast({
-        message: 'Tarea actualizada exitosamente',
+        message: 'Tarea Actualizada exitosamente',
         duration: 1500,
         color: 'success',
         position: 'middle',
@@ -131,7 +131,7 @@ export class AddUpdateProductComponent implements OnInit {
         // Luego, después de 5 segundos, mostrar el mensaje de advertencia
     setTimeout(() => {
       this.utilsSrv.showToast({
-        message: 'Tienes una Tarea Pendiente',
+        message: 'Tu entrega se ha Actualizado para calificar',
         duration: 15000,
         color: 'warning',
         position: 'middle',
