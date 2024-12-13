@@ -1,0 +1,36 @@
+<app-header [showMenu]="true" title="Tareas"></app-header>
+
+<ion-content>
+  <!-- Lista de tareas -->
+  <ion-list class="task-list">
+    <ion-item-sliding *ngFor="let task of tasks" class="task-item">
+      <ion-item>
+        <ion-label>
+          <h2 class="task-title">{{ task.titulo }}</h2>
+          <p class="task-description">{{ task.descripcion }}</p>
+          <small class="task-date">{{ task.date.toDate() | date }}</small>
+        </ion-label>
+      </ion-item>
+
+      <!-- Opciones para cada tarea -->
+      <ion-item-options>
+        <!-- Editar -->
+        <ion-item-option (click)="addUpdateTask(task)">
+          <ion-icon class="option-btn" name="create-outline"></ion-icon>
+        </ion-item-option>
+
+        <!-- Eliminar -->
+        <ion-item-option color="danger" (click)="confirmDeleteTask(task)">
+          <ion-icon class="option-btn" name="trash-outline"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+
+  <!-- Botón para agregar tarea -->
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button (click)="openTaskModal()">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
