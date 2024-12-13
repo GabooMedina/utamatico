@@ -11,6 +11,7 @@ import { HttpClient } from '@angular/common/http'; // Importa HttpClient
 export class AcademicService {
   private subjectsCollection = 'materia';  // Nombre de la colección en Firebase
   private tasksCollection = 'tareas';
+  private horariosCollection = 'Horarios'; // Nombre de la colección en Firebase
   private apiUrl = 'http://localhost:3000/send-email';
 
 
@@ -96,6 +97,16 @@ export class AcademicService {
         console.error('Error al enviar correo:', err);
       }
     });
+  }
+
+    // Obtener horarios desde Firebase
+  getHorarios(): Observable<any> {
+    return this.firestore.collection(this.horariosCollection).doc('Beduptk1VSYTNbAJ3Lkk').valueChanges();
+  }
+
+  // Obtener todos los horarios
+  getAllHorarios(): Observable<any> {
+    return this.firestore.collection(this.horariosCollection).snapshotChanges();
   }
 
 }

@@ -1,0 +1,22 @@
+<app-header [showMenu]="true" title="Horarios"></app-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Horarios de la Semana</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <!-- Mostrar horarios para cada día de la semana -->
+      <div *ngFor="let dia of ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes']">
+        <h2>{{ dia }}</h2>
+        <ion-list>
+          <!-- Mostrar las materias de cada día -->
+          <ion-item *ngFor="let materia of horarios[dia]">
+            {{ materia }}
+          </ion-item>
+        </ion-list>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
