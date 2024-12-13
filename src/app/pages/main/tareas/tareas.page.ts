@@ -98,4 +98,6 @@ export class TareasPage implements OnInit {
   addUpdateTask(task: any) {
     this.openTaskModal(task);  // Abre el modal con la tarea seleccionada
   }
+
+  
 }

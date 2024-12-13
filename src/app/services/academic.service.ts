@@ -24,7 +24,7 @@ export class AcademicService {
           map(actions => actions.map(a => {
             const data = a.payload.doc.data() as Task;
             const id = a.payload.doc.id;
-            return { id, ...data };  // Incluye el id con los datos de la tarea
+            return { id, ...data };  
           }))
         );
       }
